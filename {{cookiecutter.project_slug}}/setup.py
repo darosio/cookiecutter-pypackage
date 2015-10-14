@@ -37,13 +37,13 @@ setup(
                  '{{ cookiecutter.project_slug }}'},
     include_package_data=True,
     install_requires=requirements,
-    license="ISCL",
+    license="new-bsd",
     zip_safe=False,
     keywords='{{ cookiecutter.project_slug }}',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: ISC License (ISCL)',
+        'License :: OSI Approved :: BSD 3-Clause (BSD New)',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.6',
@@ -52,6 +52,12 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
     ],
-    test_suite='tests',
-    tests_require=test_requirements
+    # List additional groups of dependencies here (e.g. development
+    # dependencies). You can install these using the following syntax,
+    # for example:
+    # $ pip install -e .[dev,test]
+    extras_require={
+        'dev': ['check-manifest'],
+        'test': ['coverage', 'pytest-cov'],
+    }
 )
