@@ -3,6 +3,7 @@
 	"email": "danielepietroarosio@gmail.com",
 	"github_username": "darosio",
 	"project_name": "Boilerplate",
+	"script_name": "script",
 	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
 	"project_short_description": "Boilerplate contains all the boilerplate you need to create a Python package.",
 	"release_date": "2015-01-11",

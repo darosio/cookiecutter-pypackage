@@ -16,6 +16,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     # TODO: put package requirements here
+    'docopt',
 ]
 
 test_requirements = [
@@ -37,6 +38,11 @@ setup(
                  '{{ cookiecutter.project_slug }}'},
     include_package_data=True,
     install_requires=requirements,
+    # TODO: remove or add any other script
+    entry_points={ 'console_scripts': [
+                    '{{ cookiecutter.script_name }} = {{ cookiecutter.project_slug }}.{{ cookiecutter.script_name }}:main',
+                   ],
+    },
     license="new-bsd",
     zip_safe=False,
     keywords='{{ cookiecutter.project_slug }}',
