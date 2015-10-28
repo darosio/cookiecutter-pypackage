@@ -11,7 +11,7 @@
 
 {{ cookiecutter.project_short_description}}
 
-* Free software: ISC license
+* Free software: New BSD license
 * Documentation: https://{{ cookiecutter.project_slug }}.readthedocs.org.
 
 Features
