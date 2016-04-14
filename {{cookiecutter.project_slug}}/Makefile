@@ -82,3 +82,6 @@ dist: clean
 
 install: clean
 	python setup.py install
+
+install-dev: clean
+	pip install -e .[dev,test]
