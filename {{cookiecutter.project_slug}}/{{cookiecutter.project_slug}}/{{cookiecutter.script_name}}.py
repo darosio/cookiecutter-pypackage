@@ -1,9 +1,8 @@
 '''{{ cookiecutter.script_name }}
 
 Usage:
-  dark ship new <name>...
+  dark [options] <name>
   dark ship <name> move <x> <y> [--speed=<kn>]
-  dark ship shoot <x> <y>
   dark mine (set|remove) <x> <y> [--moored|--drifting]
   dark -h | --help
   dark --version
@@ -16,8 +15,10 @@ Options:
   --drifting    Drifting mine.
 '''
 
-#from __future__ import unicode_literals, print_function
+# from __future__ import unicode_literals, print_function
 from docopt import docopt
+from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
+
 
 __version__ = "{{ cookiecutter.version }}"
 __author__ = "{{ cookiecutter.full_name }}"
