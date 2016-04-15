@@ -20,11 +20,6 @@ from docopt import docopt
 from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
 
 
-__version__ = "{{ cookiecutter.version }}"
-__author__ = "{{ cookiecutter.full_name }}"
-__license__ = "New BSD"
-
-
 def main():
     '''Main entry point for the {{ cookiecutter.script_name }} CLI.'''
     args = docopt(__doc__, version=__version__)
