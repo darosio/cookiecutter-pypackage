@@ -64,7 +64,8 @@ setup(
     # for example:
     # $ pip install -e .[dev,test]
     extras_require={
-        'dev': ['check-manifest'],
-        'test': ['coverage', 'pytest-cov'],
+        'dev': ['check-manifest', 'watchdog', 'bumpversion'],
+        'test': ['coverage', 'pytest-cov', 'tox', 'flake8'],
+        'doc': ['sphinxcontrib-plantuml']
     }
 )

@@ -84,4 +84,4 @@ install: clean
 	python setup.py install
 
 install-dev: clean
-	pip install -e .[dev,test]
+	pip install -e .[dev,test,doc]
