@@ -18,6 +18,7 @@ Options:
 # from __future__ import unicode_literals, print_function
 from docopt import docopt
 from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
+from {{ cookiecutter.project_slug }} import __version__
 
 
 def main():
